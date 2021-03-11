@@ -1,4 +1,4 @@
-package per.lzy.demo;
+package per.lzy.spring.statemechine.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
