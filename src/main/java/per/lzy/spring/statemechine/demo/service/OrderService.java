@@ -1,6 +1,7 @@
 package per.lzy.spring.statemechine.demo.service;
 
 import per.lzy.spring.statemechine.demo.entity.Order;
+import per.lzy.spring.statemechine.demo.enums.OrderStatus;
 
 import java.util.Map;
 
@@ -46,4 +47,6 @@ public interface OrderService {
      * @return
      */
     Map<Integer, Order> getOrders();
+
+    void addOrders(int id, OrderStatus orderStatus);
 }
