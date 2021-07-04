@@ -39,6 +39,14 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
+    public void addOrders(int id, OrderStatus orderStatus) {
+        Order order = new Order();
+        order.setStatus(orderStatus);
+        order.setId(id);
+        orders.put(order.getId(), order);
+    }
+
+    @Override
     public Order pay(int id) {
         Order order = orders.get(id);
         System.out.println("线程名称：" + Thread.currentThread().getName() + " 尝试支付，订单号：" + id);
